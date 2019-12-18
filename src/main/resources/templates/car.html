@@ -6,8 +6,16 @@
 </head>
 <body>
 <h1>Lista aut</h1>
-<p th:text="${name}"></p>
-<p th:text="${car.getMark()}"></p>
-<p th:text="${car.getModel()}"></p>
+
+
+<table>
+    <tr th:each="car: ${cars}">
+        <td th:text="${car.getMark()}">
+        <td th:text="${car.getModel()}">
+    </tr>
+
+
+</table>
+
 </body>
 </html>
